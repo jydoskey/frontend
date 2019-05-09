@@ -1,0 +1,183 @@
+/* Media-Queries */
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 250px)) 1fr;
+    }
+    
+    #section-1 .mother-text {
+        columns: 2;
+        column-gap: 20px;
+        
+    }
+    
+        #section-1 .mother-text p {
+            padding-top: o;
+    }
+     .mother-wrapper, #section-1 div {
+        grid-column: span 2;
+    }
+    
+    .mother-wrapper, #section-2 ul{
+        grid-column: 2/4;        
+    }
+    
+    .box, #footer div {
+        grid-column: span 2;
+    }
+    
+    #section-2 ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #section-2 li {
+        width: 30% 
+    }
+    
+}
+
+
+
+/* Main Styles*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #777777;
+        color: #fff;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 1em 0;
+    
+}
+
+p {
+    margin: o;
+    padding: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #009de0;
+    color: blue;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid cyan;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.btn:hover  {
+    background: #000;
+    color: chocolate;
+}
+
+/* Slider */
+#slider {
+    min-height: 450px;
+    color: blue;
+    text-align: center;
+}
+
+#slider .bg-img {
+    position: absolute;
+    background: #666 url('business.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#slider h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#slider .mother-wrapper,
+#section-1 .mother-wrapper{
+    padding: 0 15px;
+}
+
+/* SECTION 1 */
+
+#section-1 {
+    background: cornsilk;
+    color: dodgerblue;
+    padding-bottom: 20px;
+}
+
+.picture {
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+/* SECTION 2*/
+
+#section-2 {
+   padding: 20px 10px 10px; 
+}
+
+#section-2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-2 li {
+    margin-bottom: 10px;
+    background:cornsilk;
+    color: dodgerblue;
+}
+
+.experience-content {
+    padding: 15px;
+}
+
+/*SECTION 2*/
+#section-3 {
+    background: white;
+    padding: 20px;
+    color: grey;
+}
+
+/* SECTION4*/
+#section-4 {
+    padding: 20px;
+    color: antiquewhite;
+}
+
+#section-4 .box:first-child {
+    background: cadetblue;
+}
+
+/* FOOTER */
+#footer {
+    padding: 20px;
+    background: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+#footer a {
+    color: chartreuse;
+    text-decoration: none;
+}
+
